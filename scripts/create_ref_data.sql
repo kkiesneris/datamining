@@ -1,0 +1,7 @@
+CREATE TABLE ref_data
+(
+    code VARCHAR2(4) NOT NULL ENABLE,
+    type VARCHAR2(34) NOT NULL ENABLE,
+    name VARCHAR2(255),
+    CONSTRAINT pk_ref_data PRIMARY KEY (code, type) USING INDEX ENABLE
+);
